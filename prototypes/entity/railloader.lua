@@ -11,9 +11,7 @@ data:extend{
     minable = { mining_time = 0.1, result = "railloader" },
     flags = {"player-creation", "placeable-neutral"},
     max_health = 800,
-    collision_box = {{-1.8, -0.3}, {1.8, 0.3}},
-    selection_box = {{-2, -3.5}, {2, 0.5}},
-    picture = pictures.empty_sheet,
+    collision_box = {{-2, -2}, {2, 2}},
     fluid_box = {
       pipe_connections = {},
     },
@@ -37,13 +35,7 @@ data:extend{
     flags = {},
     collision_mask = {},
     render_layer = "higher-object-under",
-    picture = {
-      filename = "__railloader__/graphics/railloader/structure-horizontal.png",
-      priority = "extra-high",
-      width = 188,
-      height = 210,
-      scale = 1,
-    },
+    picture = pictures.railloader_structure_horizontal,
   },
   {
     type = "simple-entity",
@@ -53,13 +45,7 @@ data:extend{
     flags = {},
     collision_mask = {},
     render_layer = "higher-object-under",
-    picture = {
-      filename = "__railloader__/graphics/railloader/structure-vertical.png",
-      priority = "extra-high",
-      width = 188,
-      height = 210,
-      scale = 1,
-    },
+    picture = pictures.railloader_structure_vertical,
   },
 
   {
